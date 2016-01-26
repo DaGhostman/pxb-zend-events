@@ -1,0 +1,27 @@
+{
+    "name": "ddimitrov/pxb-zend-events",
+    "description": "Zend Event Manager module for ddimitrov/pxb",
+    "extra": {
+        "pxb-config": "\\PXB\\Module\\Zend\\Events\\EventModuleConfig"
+    },
+    "type": "library",
+    "autoload": {
+        "psr-4": {
+            "PXB\\Module\\Zend\\Events\\": "src/"
+        }
+    },
+    "require": {
+        "zendframework/zend-eventmanager": "~2.5"
+    },
+    "require-dev": {
+        "zendframework/zend-expressive": "~1.0@rc || ^1.0"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Dimitar Dimitrov",
+            "email": "daghostman.dd@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable"
+}
