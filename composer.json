@@ -14,7 +14,8 @@
         "zendframework/zend-eventmanager": "~2.6"
     },
     "require-dev": {
-        "zendframework/zend-expressive": "~1.0@rc || ^1.0"
+        "zendframework/zend-expressive": "~1.0@rc || ^1.0",
+        "mtymek/expressive-config-manager": "^0.2.0"
     },
     "license": "MIT",
     "authors": [

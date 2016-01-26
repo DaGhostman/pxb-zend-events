@@ -2,18 +2,12 @@
 
 namespace PXB\Module\Zend\Events;
 
-use Zend\EventManager\SharedEventManager;
+use Zend\Expressive\ConfigManager\PhpFileProvider as ConfigProvider;
 
 class EventModuleConfig
 {
     public function __invoke()
     {
-        return [
-            'dependencies' => [
-                'factories' => [
-                    SharedEventManager::class => Factory\EventManagerFactory::class
-                ]
-            ],
-        ];
+        return new ConfigProvider(__DIR__ . '/../config/{{,*.}global,{,*.}local}.php');
     }
 }
