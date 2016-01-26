@@ -1,16 +1,8 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: ddimitrov
- * Date: 26/01/16
- * Time: 00:26
- */
 
 namespace PXB\Module\Zend\Events\Factory;
 
-
 use Interop\Container\ContainerInterface;
-use Zend\EventManager\EventManager;
 use Zend\EventManager\SharedEventManager;
 
 class EventManagerFactory
@@ -24,7 +16,7 @@ class EventManagerFactory
 
         if (array_key_exists('events', $config)) {
             foreach ($config['events'] as $event => $handlers) {
-                if (empty($handlers)) {
+                if (count($handlers) === 0) {
                     continue;
                 }
 
